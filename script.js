@@ -1,5 +1,25 @@
-// Funcionalidad del formulario de registro
+// Menú Hamburguesa
 document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (hamburgerMenu) {
+        hamburgerMenu.addEventListener('click', function() {
+            hamburgerMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburgerMenu.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+    
+    // Funcionalidad del formulario de registro
     const registroForm = document.getElementById('registroForm');
     
     if (registroForm) {
@@ -55,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
+            const email = document.getElementById('email-contact').value;
             const phone = document.getElementById('phone').value;
             const message = document.getElementById('message').value;
             

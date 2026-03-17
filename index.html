@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrestaStar Promotor Suc. Irapuato - Gana Dinero Extra</title>
+    <meta name="description" content="Únete a PrestaStar Promotor Suc. Irapuato y gana dinero extra como distribuidor de vales. Comisiones hasta 22%, sin inversión inicial.">
+    <meta name="keywords" content="PrestaStar, vales, dinero extra, distribuidor, Irapuato, comisiones">
+    <meta name="author" content="PrestaStar Promotor Suc. Irapuato">
+    
+    <!-- Open Graph Meta Tags para Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sergionhventas-pixel.github.io/PrestaStar-promotor-Suc.-Irapuato/">
+    <meta property="og:title" content="PrestaStar Promotor - Gana Dinero Extra como Distribuidor de Vales">
+    <meta property="og:description" content="Únete a nuestro equipo y gana comisiones hasta 22%. Sin inversión inicial, capacitación incluida. ¡Trabaja a tu ritmo!">
+    <meta property="og:image" content="https://sergionhventas-pixel.github.io/PrestaStar-promotor-Suc.-Irapuato/images/logo_prestastar.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_MX">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PrestaStar Promotor - Gana Dinero Extra">
+    <meta name="twitter:description" content="Únete a nuestro equipo y gana comisiones hasta 22%. Sin inversión inicial.">
+    <meta name="twitter:image" content="https://sergionhventas-pixel.github.io/PrestaStar-promotor-Suc.-Irapuato/images/logo_prestastar.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo_prestastar.png">
+    <link rel="apple-touch-icon" href="images/logo_prestastar.png">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" as="image" href="images/logo_prestastar.png">
+    
+    <title>PrestaStar Promotor Suc. Irapuato - Gana Dinero Extra</title>
 </head>
 <body>
     <!-- Navegación -->
@@ -17,7 +46,15 @@
                     <p>Suc. Irapuato</p>
                 </div>
             </div>
-            <ul class="nav-menu">
+            
+            <!-- Botón Hamburguesa -->
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#videos">Videos</a></li>
                 <li><a href="#perfiles">Perfiles</a></li>
@@ -47,14 +84,14 @@
             
             <div class="videos-grid">
                 <div class="video-card">
-                    <video controls poster="images/logo_prestastar.png">
+                    <video controls poster="images/logo_prestastar.png" loading="lazy">
                         <source src="videos/1000046491.mp4" type="video/mp4">
                         Tu navegador no soporta videos HTML5.
                     </video>
                     <h3>Video Introductorio 1</h3>
                 </div>
                 <div class="video-card">
-                    <video controls poster="images/logo_prestastar.png">
+                    <video controls poster="images/logo_prestastar.png" loading="lazy">
                         <source src="videos/1000046492.mp4" type="video/mp4">
                         Tu navegador no soporta videos HTML5.
                     </video>
@@ -77,14 +114,14 @@
                 </div>
                 <div class="perfil-body">
                     <div class="perfil-images">
-                        <img src="perfiles/PERFILES/PERFIL_1/1000041046.png" alt="Perfil 1">
-                        <img src="perfiles/PERFILES/PERFIL_1/1000041047.png" alt="Requisitos Perfil 1">
+                        <img src="perfiles/PERFILES/PERFIL_1/1000041046.png" alt="Perfil 1" loading="lazy">
+                        <img src="perfiles/PERFILES/PERFIL_1/1000041047.png" alt="Requisitos Perfil 1" loading="lazy">
                     </div>
                     <div class="perfil-videos">
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="perfiles/PERFILES/PERFIL_1/1000042328.mp4" type="video/mp4">
                         </video>
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="perfiles/PERFILES/PERFIL_1/1000041068.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -98,11 +135,11 @@
                 </div>
                 <div class="perfil-body">
                     <div class="perfil-images">
-                        <img src="perfiles/PERFILES/PERFIL_2/1000041079.png" alt="Perfil 2">
-                        <img src="perfiles/PERFILES/PERFIL_2/1000041080.png" alt="Requisitos Perfil 2">
+                        <img src="perfiles/PERFILES/PERFIL_2/1000041079.png" alt="Perfil 2" loading="lazy">
+                        <img src="perfiles/PERFILES/PERFIL_2/1000041080.png" alt="Requisitos Perfil 2" loading="lazy">
                     </div>
                     <div class="perfil-videos">
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="perfiles/PERFILES/PERFIL_2/video_perfil_2.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -116,11 +153,11 @@
                 </div>
                 <div class="perfil-body">
                     <div class="perfil-images">
-                        <img src="perfiles/PERFILES/PERFIL_3/1000041117.png" alt="Perfil 3">
-                        <img src="perfiles/PERFILES/PERFIL_3/1000041118.png" alt="Requisitos Perfil 3">
+                        <img src="perfiles/PERFILES/PERFIL_3/1000041117.png" alt="Perfil 3" loading="lazy">
+                        <img src="perfiles/PERFILES/PERFIL_3/1000041118.png" alt="Requisitos Perfil 3" loading="lazy">
                     </div>
                     <div class="perfil-videos">
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="perfiles/PERFILES/PERFIL_3/1000042330.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -134,11 +171,11 @@
                 </div>
                 <div class="perfil-body">
                     <div class="perfil-images">
-                        <img src="perfiles/PERFILES/PERFIL_4/1000043591.png" alt="Perfil 4">
-                        <img src="perfiles/PERFILES/PERFIL_4/1000043592.png" alt="Requisitos Perfil 4">
+                        <img src="perfiles/PERFILES/PERFIL_4/1000043591.png" alt="Perfil 4" loading="lazy">
+                        <img src="perfiles/PERFILES/PERFIL_4/1000043592.png" alt="Requisitos Perfil 4" loading="lazy">
                     </div>
                     <div class="perfil-videos">
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="perfiles/PERFILES/PERFIL_4/1000041127.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -152,11 +189,11 @@
                 </div>
                 <div class="perfil-body">
                     <div class="perfil-images">
-                        <img src="perfiles/PERFILES/PERFIL_5/1000041031.png" alt="Perfil 5">
-                        <img src="perfiles/PERFILES/PERFIL_5/1000041032.png" alt="Requisitos Perfil 5">
+                        <img src="perfiles/PERFILES/PERFIL_5/1000041031.png" alt="Perfil 5" loading="lazy">
+                        <img src="perfiles/PERFILES/PERFIL_5/1000041032.png" alt="Requisitos Perfil 5" loading="lazy">
                     </div>
                     <div class="perfil-videos">
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="perfiles/PERFILES/PERFIL_5/1000042331.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -170,11 +207,11 @@
                 </div>
                 <div class="perfil-body">
                     <div class="perfil-images">
-                        <img src="perfiles/PERFILES/PERFIL_6/1000041142.png" alt="Perfil 6">
-                        <img src="perfiles/PERFILES/PERFIL_6/1000041144.png" alt="Requisitos Perfil 6">
+                        <img src="perfiles/PERFILES/PERFIL_6/1000041142.png" alt="Perfil 6" loading="lazy">
+                        <img src="perfiles/PERFILES/PERFIL_6/1000041144.png" alt="Requisitos Perfil 6" loading="lazy">
                     </div>
                     <div class="perfil-videos">
-                        <video controls>
+                        <video controls loading="lazy">
                             <source src="perfiles/PERFILES/PERFIL_6/1000042331.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -191,14 +228,14 @@
             
             <div class="capacitacion-videos">
                 <div class="capacitacion-video">
-                    <video width="100%" controls poster="images/logo_prestastar.png">
+                    <video width="100%" controls poster="images/logo_prestastar.png" loading="lazy">
                         <source src="videos/1000045330.mp4" type="video/mp4">
                         Tu navegador no soporta videos HTML5.
                     </video>
                     <h3>Conociendo a PrestaStar</h3>
                 </div>
                 <div class="capacitacion-video">
-                    <video width="100%" controls poster="images/logo_prestastar.png">
+                    <video width="100%" controls poster="images/logo_prestastar.png" loading="lazy">
                         <source src="videos/1000045334.mp4" type="video/mp4">
                         Tu navegador no soporta videos HTML5.
                     </video>
@@ -208,36 +245,36 @@
         </div>
     </section>
 
-    <!-- Sección Conoce PrestaStar -->
-    <section id="capacitacion" class="capacitacion-section">
+    <!-- Sección Registro -->
+    <section id="registro" class="registro-section">
         <div class="container">
-            <h2>Conociendo a PrestaStar</h2>
+            <h2>Formulario de Registro</h2>
             <p class="section-subtitle">Completa el formulario y envía tus comprobantes por WhatsApp</p>
             
             <div class="registro-form-container">
                 <form class="registro-form" id="registroForm">
                     <div class="form-group">
-                        <label for="nombre">Nombre Completo *</label>
+                        <label for="nombre">Nombre Completo <span class="required">*</span></label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Correo Electrónico *</label>
+                        <label for="email">Correo Electrónico <span class="required">*</span></label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="telefono">Teléfono *</label>
+                        <label for="telefono">Teléfono <span class="required">*</span></label>
                         <input type="tel" id="telefono" name="telefono" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="ubicacion">Ubicación/Ciudad *</label>
+                        <label for="ubicacion">Ubicación/Ciudad <span class="required">*</span></label>
                         <input type="text" id="ubicacion" name="ubicacion" required>
                     </div>
 
                     <div class="form-group">
-                        <label>Selecciona tu(s) Perfil(es) *</label>
+                        <label><strong>Selecciona tu(s) Perfil(es) <span class="required">*</span></strong></label>
                         <div class="checkbox-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" name="perfil" value="Distribuidor@ de vales">
@@ -366,7 +403,7 @@
     <section id="contacto" class="contact-section">
         <div class="container">
             <h2>Contacto</h2>
-              <p class="contact-intro">¿Interesado(a) en unirte a PrestaStar? Contáctanos hoy mismo</p>>
+            <p class="contact-intro">¿Interesado(a) en unirte a PrestaStar? Contáctanos hoy mismo</p>
             
             <div class="contact-content">
                 <div class="contact-info">
@@ -391,8 +428,8 @@
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email-contact">Correo Electrónico</label>
+                        <input type="email" id="email-contact" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Teléfono</label>
