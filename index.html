@@ -537,10 +537,25 @@
                     <div class="form-group">
                         <label><strong>REQUISITOS BÁSICOS:</strong></label>
                         <div class="checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="comprobante" value="INE vigente">
-                                INE vigente
-
+                            <div class="comprobante-item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="comprobante" value="INE vigente">
+                                    INE vigente
+                                </label>
+                                <input type="file" name="comprobante_file_ine" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
+                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_ine\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
+                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
+                            </div>
+                            <div class="comprobante-item">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="comprobante" value="Comprobante de domicilio reciente">
+                                    Comprobante de domicilio reciente
+                                </label>
+                                <input type="file" name="comprobante_file_domicilio" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
+                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_domicilio\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
+                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="form-group">
