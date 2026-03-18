@@ -537,84 +537,44 @@
                     <div class="form-group">
                         <label><strong>REQUISITOS BÁSICOS:</strong></label>
                         <div class="checkbox-group">
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="INE vigente">
-                                    INE vigente
-                                </label>
-                                <input type="file" name="comprobante_file_ine" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_ine\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="Comprobante de domicilio reciente">
-                                    Comprobante de domicilio reciente
-                                </label>
-                                <input type="file" name="comprobante_file_domicilio" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_domicilio\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="INE vigente">
+                                INE vigente
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="Comprobante de domicilio reciente">
+                                Comprobante de domicilio reciente
+                            </label>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label><strong>COMPROBANTES DE SU ACTUAL FUENTE DE INGRESOS:</strong></label>
                         <div class="checkbox-group">
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="Última relación de cobro (para valeras/préstamos grupales)">
-                                    Última relación de cobro (para valeras/préstamos grupales)
-                                </label>
-                                <input type="file" name="comprobante_file_1" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_1\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="Tickets, Notas, Facturas (de artículos que compra para su venta)">
-                                    Tickets, Notas, Facturas (de artículos que compra para su venta)
-                                </label>
-                                <input type="file" name="comprobante_file_2" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_2\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="Recibos de nómina">
-                                    Recibos de nómina
-                                </label>
-                                <input type="file" name="comprobante_file_3" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_3\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="Carta de ingresos">
-                                    Carta de ingresos
-                                </label>
-                                <input type="file" name="comprobante_file_4" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_4\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="Estados de cuenta">
-                                    Estados de cuenta
-                                </label>
-                                <input type="file" name="comprobante_file_5" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_5\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
-                            <div class="comprobante-item">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="comprobante" value="Comprobante de la pensión (para personas con empleo formal o pensionad@s)">
-                                    Comprobante de la pensión (para personas con empleo formal o pensionad@s)
-                                </label>
-                                <input type="file" name="comprobante_file_6" accept="image/*,.pdf" class="comprobante-file" style="display:none;">
-                                <button type="button" class="btn-upload-file" onclick="document.querySelector('input[name=\"comprobante_file_6\"]').click()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 12px;">📷 Subir foto</button>
-                                <span class="file-name" style="margin-left: 10px; font-size: 12px; color: #666;"></span>
-                            </div>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="Última relación de cobro (para valeras/préstamos grupales)">
+                                Última relación de cobro (para valeras/préstamos grupales)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="Tickets, Notas, Facturas (de artículos que compra para su venta)">
+                                Tickets, Notas, Facturas (de artículos que compra para su venta)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="Recibos de nómina">
+                                Recibos de nómina
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="Carta de ingresos">
+                                Carta de ingresos
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="Estados de cuenta">
+                                Estados de cuenta
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="comprobante" value="Comprobante de la pensión (para personas con empleo formal o pensionad@s)">
+                                Comprobante de la pensión (para personas con empleo formal o pensionad@s)
+                            </label>
                         </div>
                     </div>
 
@@ -623,7 +583,12 @@
                         <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre ti..."></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+                    <div class="form-group" style="background-color: #f0f8ff; border-left: 4px solid #007bff; padding: 15px; margin-top: 20px; border-radius: 4px;">
+                        <p style="font-size: 16px; color: #333; margin: 0; line-height: 1.6;">
+                            <strong>📸 Instrucciones finales:</strong><br>
+                            Toma fotos de los comprobantes que marcaste en la casilla a la izquierda y envíalos por WhatsApp al <strong>4624931734</strong>
+                        </p>
+                    </div>
                 </form>
             </div>
         </div>
