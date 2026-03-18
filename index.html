@@ -724,5 +724,24 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <script>
+        // Funcionalidad para mostrar nombre del archivo en campos de carga
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleccionar todos los inputs de archivo
+            const fileInputs = document.querySelectorAll('input[type="file"]');
+            
+            fileInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    // Encontrar el span de nombre de archivo más cercano
+                    const fileNameSpan = this.closest('.comprobante-item')?.querySelector('.file-name');
+                    if (fileNameSpan && this.files.length > 0) {
+                        fileNameSpan.textContent = '✓ ' + this.files[0].name;
+                        fileNameSpan.style.color = '#28a745';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
