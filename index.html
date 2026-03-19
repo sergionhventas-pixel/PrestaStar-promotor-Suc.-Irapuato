@@ -69,20 +69,23 @@
 
     <!-- Sección Hero -->
     <!-- Sección Hero -->
-    <section id="inicio" class="hero" style="background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%), url('hero_background.jpg') center/contain no-repeat; background-size: contain; position: relative; min-height: 600px; display: flex; align-items: center; justify-content: center;" class="hero-responsive">
+    <section id="inicio" class="hero" style="background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 100%), url('hero_background.jpg') center/cover no-repeat fixed; position: relative; min-height: 600px; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;" class="hero-responsive">
         <style>
+            .hero-responsive {
+                background-attachment: cover !important;
+                background-size: cover !important;
+                background-position: center center !important;
+            }
             @media (max-width: 768px) {
                 .hero-responsive {
                     min-height: 500px !important;
-                    background-size: cover !important;
-                    background-position: center center !important;
+                    background-attachment: scroll !important;
                 }
             }
             @media (max-width: 480px) {
                 .hero-responsive {
-                    min-height: 400px !important;
-                    background-size: cover !important;
-                    background-position: center center !important;
+                    min-height: 450px !important;
+                    background-attachment: scroll !important;
                 }
             }
         </style>
