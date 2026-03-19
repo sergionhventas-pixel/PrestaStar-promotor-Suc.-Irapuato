@@ -469,7 +469,7 @@
                             </div>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Enviar Recomendación</button>
+                        <button type="button" class="btn btn-primary" onclick="enviarRecomendacionWhatsApp(event)">Enviar Recomendación</button>
                     </form>
                 </div>
             </div>
@@ -707,6 +707,45 @@
                 });
             });
         });
+    </script>
+    
+    <script>
+        // Función para enviar recomendación por WhatsApp
+        function enviarRecomendacionWhatsApp(event) {
+            event.preventDefault();
+            
+            // Obtener valores del formulario
+            const nombreRecomendador = document.getElementById('nombre-recomendador').value;
+            const whatsappRecomendador = document.getElementById('whatsapp-recomendador').value;
+            const nombreRecomendado = document.getElementById('nombre-recomendado').value;
+            const whatsappRecomendado = document.getElementById('whatsapp-recomendado').value;
+            
+            // Validar que todos los campos estén llenos
+            if (!nombreRecomendador || !whatsappRecomendador || !nombreRecomendado || !whatsappRecomendado) {
+                alert('Por favor completa todos los campos');
+                return;
+            }
+            
+            // Crear mensaje para WhatsApp
+            const mensaje = `*FORMULARIO DE RECOMENDACIÓN - PRESTASTAR*\n\n` +
+                `*Datos de Quien Recomienda:*\n` +
+                `Nombre: ${nombreRecomendador}\n` +
+                `WhatsApp: ${whatsappRecomendador}\n\n` +
+                `*Datos de la Persona Recomendada:*\n` +
+                `Nombre: ${nombreRecomendado}\n` +
+                `WhatsApp: ${whatsappRecomendado}\n\n` +
+                `Enviado desde: PrestaStar Promotor`;
+            
+            // Codificar el mensaje para URL
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            
+            // Crear URL de WhatsApp Web
+            const numeroDestino = '4624931734';
+            const urlWhatsApp = `https://web.whatsapp.com/send?phone=${numeroDestino}&text=${mensajeCodificado}`;
+            
+            // Abrir WhatsApp Web
+            window.open(urlWhatsApp, '_blank');
+        }
     </script>
 </body>
 </html>
